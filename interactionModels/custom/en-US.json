@@ -1,0 +1,280 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "month",
+              "elicitationRequired": true,
+              "type": "MonthType",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1492238343090.1473945705124"
+              }
+            },
+            {
+              "name": "day",
+              "elicitationRequired": true,
+              "type": "AMAZON.Ordinal",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1492238343090.938718654227"
+              }
+            },
+            {
+              "name": "year",
+              "elicitationRequired": true,
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1492238343090.1053366595854"
+              }
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "month",
+              "type": "MonthType",
+              "samples": [
+                "i was born in {month}",
+                "my birth month is {month}",
+                "{month}",
+                "in {month}",
+                "{month} {day}",
+                "{month} {day} {year}"
+              ]
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "samples": [
+                "the {day}",
+                "{day}",
+                "{month} {day}",
+                "{month} {day} {year}"
+              ]
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": [
+                "{year}",
+                "of {year}",
+                "I was born in {year}",
+                "I was born in the year {year}",
+                "year {year}",
+                "in {year}",
+                "in the year {year}",
+                "the year {year}",
+                "{month} {day} {year}",
+                "{month} {year}"
+              ]
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "samples": [
+            "{year} {month}",
+            "{year} {month} {day}",
+            "{day} {month} {year}",
+            "{day} {month} ",
+            "i was born on {month} {day} {year}",
+            "I was born in {month}",
+            "I was born on {day}",
+            "I was born in {year}",
+            "I was born on october eight nineteen ninety five",
+            "{day}",
+            "{month}",
+            "{month} {year}",
+            "{month} of {year}",
+            "{day} of {month}",
+            "in the year {year}",
+            "born in {year}",
+            "for the {day} of {month}",
+            "for {month} {day}",
+            "with the {day} of {month}",
+            "for the {day} of {month} {year}",
+            "for {month} {day} {year}",
+            "{month} {day} {year}",
+            "my date of birth is the {day} of {month} {year}",
+            "I was born the {day} of {month} {year}",
+            "{day} of {month} {year}",
+            "{month} {day}",
+            "{month} the {day}",
+            "I was born the {day} of {month}",
+            "open my zodiac sign",
+            "get my zodiac sign",
+            "find out what my zodiac sign is",
+            "do you know what my zodiac sign is",
+            "zodiac sign",
+            "want to know my zodiac sign",
+            "can you tell my zodiac sign",
+            "can you tell me what my zodiac sign is",
+            "what is your take on my zodiac sign",
+            "say my zodiac sign",
+            "tell my zodiac sign once more",
+            "please repeat my zodiac sign",
+            "please state my zodiac sign once more",
+            "i was born on  {day}  {month}  {year} what is my zodiac sign",
+            "tell zodiac sign for my birthday",
+            "for my birthday please tell me my zodiac sign",
+            "tell me my birthday zodiac sign",
+            "tell me my zodiac sign for my birthday",
+            "let me know my zodiac sign",
+            "please tell me what my zodiac sign is based on my birthday",
+            "could you please tell me what my zodiac sign is",
+            "whats the zodiac sign"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "say hello",
+            "say hi",
+            "greet me"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "december"
+              },
+              "id": "12"
+            },
+            {
+              "name": {
+                "value": "november"
+              },
+              "id": "11"
+            },
+            {
+              "name": {
+                "value": "october"
+              },
+              "id": "10"
+            },
+            {
+              "name": {
+                "value": "september"
+              },
+              "id": "09"
+            },
+            {
+              "name": {
+                "value": "august"
+              },
+              "id": "08"
+            },
+            {
+              "name": {
+                "value": "july"
+              },
+              "id": "07"
+            },
+            {
+              "name": {
+                "value": "june"
+              },
+              "id": "06"
+            },
+            {
+              "name": {
+                "value": "may"
+              },
+              "id": "05"
+            },
+            {
+              "name": {
+                "value": "april"
+              },
+              "id": "04"
+            },
+            {
+              "name": {
+                "value": "march"
+              },
+              "id": "03"
+            },
+            {
+              "name": {
+                "value": "february"
+              },
+              "id": "02"
+            },
+            {
+              "name": {
+                "value": "january"
+              },
+              "id": "01"
+            }
+          ],
+          "name": "MonthType"
+        }
+      ],
+      "invocationName": "get chatbot"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month were you born?"
+          }
+        ],
+        "id": "Elicit.Slot.1492238343090.1473945705124"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What day were you born?"
+          }
+        ],
+        "id": "Elicit.Slot.1492238343090.938718654227"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which year were you born?"
+          }
+        ],
+        "id": "Elicit.Slot.1492238343090.1053366595854"
+      }
+    ]
+  }
+}
